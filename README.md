@@ -1,6 +1,6 @@
 # Fraud Detection Using SQL (Data Modeling, Analysis, Visualization) 
 
-[![Credit card fraudster](Images/credit_card_fraudster.jpg)](https://pixelplex.io/wp-content/uploads/2022/11/machine-learning-for-fraud-detection-main-1600.jpg)
+![image](https://github.com/Namratha-Venkatesh/Fraud-Detection-Using-SQL-Data-Modeling-Analysis-Visualization-/assets/130853849/fc0a3102-1683-4343-a9a8-ebad345f54e8)
 
 ## Background
 
