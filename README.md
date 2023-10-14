@@ -1,8 +1,6 @@
-# Fraud_Detection_SQL
+# Fraud Detection Using SQL (Data Modeling, Analysis, Visualization) 
 
-![Credit card fraudster](Images/credit_card_fraudster.jpg)
-
-*[Credit Card Fraudster by Richard Patterson](https://www.flickr.com/photos/136770128@N07/42252105582/) | [Creative Commons Licensed](https://creativecommons.org/licenses/by/2.0/)*
+[![Credit card fraudster](Images/credit_card_fraudster.jpg)](https://pixelplex.io/wp-content/uploads/2022/11/machine-learning-for-fraud-detection-main-1600.jpg)
 
 ## Background
 
@@ -19,9 +17,6 @@ Define a database model to store the credit card transactions data and create a 
 
 3. [Data Analysis](#Data-Analysis): Analyze the data to identify possible fraudulent transactions.
 
----
-
-## Files
 
 ### Query Files
 
@@ -43,8 +38,6 @@ Create an entity relationship diagram (ERD) by inspecting the provided CSV files
 
 **Note:** For the `credit_card` table, the `card` column should be a VARCHAR(20) datatype rather than an INT.
 
-Tool used to develop ERD [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create your model.
-
 ![QuickDBD-export](Images/QuickDBD-export.png)
 
 ### Data Engineering
@@ -60,7 +53,6 @@ Now that your data is prepared within the database, it's finally time to identif
 
 Top 100 highest transactions during early hours i.e. 7:00 to 9:00 AM
 
-![Early_hour](Images/Early_hour.PNG)
 
 * Some fraudsters hack a credit card by making several small payments (generally less than $2.00), which are typically ignored by cardholders. Count the transactions that are less than $2.00 per cardholder. Is there any evidence to suggest that a credit card has been hacked? Explain your rationale.
 
@@ -71,17 +63,12 @@ Top 100 highest transactions during early hours i.e. 7:00 to 9:00 AM
 Created a report for fraudulent transactions of some top customers of the firm using Pandas, Plotly Express, hvPlot, and SQLAlchemy to create the visualizations.
 
 * Fraudulent transactions in the history of two of the most important customers of the firm on the basis of their cardholders' IDs are 18 and 2.
-
- ![id_holder_2](Images/id_holder_2.PNG)
- ![id_holder_18](Images/id_holder_18.PNG)
   
   * Observation : `The consumption pattern for both the id holder is very different. Id Holder 2 makes too many small transactions. Id Holder 18 has transactions ranging till $1839. Id Holder 2 is more suspectable to fraudulent transactions`
 
 * The CEO of the firm's biggest customer suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay for several expensive restaurant bills. You are asked to find any anomalous transactions during that period.
 
   * Using Plotly Express, created a series of six box plots, one for each month, in order to identify how many outliers there are per month for cardholder ID 25.
-  
-  ![id_holder_25](Images/id_holder_25.PNG)
 
   * Observations : `There seems to be fraudulent transactions pertaining to Restaurant & Food Truck category where Food Truck is ranging from $1.46 to $1046`
 
